@@ -1,0 +1,179 @@
+ @charset "UTF-8";
+
+ * {
+    margin: 0px;
+    padding: 0px;
+ }
+
+ @font-face {
+    font-family: 'Samurai';
+    src:url('../fontes/samurai.ttf') format('truetype')
+ }
+
+ @font-face {
+    font-family: 'Japonesa';
+    src:url('../fontes/Japonesa.otf') format('opentype')
+ }
+
+ :root {
+    --cor0: #F1E8D5;
+    --cor1: #E2D4B9;
+    --cor2: #2D2823;
+    --cor3: #211C17;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Samurai', cursive;
+    --fonte-secundaria: 'Japonesa', cursive;   
+     }
+   a.externo::after {
+      content: '\1F517';
+   }
+   p.especial::before {
+      content: url(../imagens/forma.png);
+   }
+   p.especial::after {
+      content: '\00A0';
+      content: url('../imagens/katana.png');
+   }
+   p.especial {
+      font-size: 1.8em;
+      font-weight: bold;
+   }
+ 
+ strong {
+   font-weight: bold;
+   border-radius: 5px;
+   padding:1px;
+   background-color: var(--cor0);
+   color:var(--cor3)
+ }
+ body {
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1), var(--cor3));
+
+ }
+ header {
+    height:190px;
+    padding-top: 20px;
+    margin-top: 10px;
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+    text-align: center;
+ }
+ header h1 {
+    text-shadow: 4px, 4px, 0px, rgba(0, 0, 0, 0.363);
+    padding: 5px;
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    font-style: italic;
+    font-size: 2.0em;
+ }
+ header p {
+    text-shadow: 3px, 3px, 0px, rgba(0, 0, 0, 0.459);
+    padding-top: 10px;
+    font-family: var(--fonte-secundaria);
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.5em;
+ }
+ nav {
+   box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.103);
+    padding:0px 0px 8px 5px;
+    height:25px;
+    background-color: var(--cor1);
+    font-family: var(--fonte-secundaria);
+    font-style: normal;
+    font-weight:normal
+ }
+ nav a {
+    padding: 3px;
+    text-shadow: 2px, 2px, 0px, rgba(0, 0, 0, 0.308);
+    font-size: 1.2em;
+    text-decoration: none;
+    color:black;
+ }
+ nav > a:hover {
+    text-decoration: underline;
+    border-radius: 5px;
+    color:white;
+    background-color: var(--cor3);
+    transition-duration: 1s;
+ }
+ main {
+   
+   box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.055);
+   margin-top: 20px;
+    padding: 20px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin:auto;
+    background-color: white;
+ }
+ main h1 {
+   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.116);
+   font-family: var(--fonte-secundaria);
+   font-weight: bold;
+   font-size: 1.8em;
+ }
+ main h2 {
+   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.116);
+   font-family: var(--fonte-secundaria);
+   font-size: 1.6em;
+ }
+ main p {
+   line-height: 2.0em;
+   padding-top: 5px;
+   font-family: Arial, Helvetica, sans-serif;
+   text-align:justify;
+   text-indent: 20px;
+ }
+ main img {
+   box-shadow: px 5px 5px 0px rgba(0, 0, 0, 0.164);
+   width: 100%;
+ }
+ main a {
+   border-radius: 5px;
+   text-decoration: none;
+   color:black;
+   background-color: var(--cor1);
+   padding:1px;
+   font-weight: bold;
+ }
+ main a:hover {
+   border-radius: 5px;
+   text-decoration: underline;
+   background-color: var(--cor3);
+   color: var(--cor0);
+ }
+ div.video {
+   background-color: var(--cor1);
+   position: relative;
+   margin-left: -20px;
+   margin-right: -20px;
+   margin-bottom: 15px;
+   padding-bottom: 59%;
+ }
+ div.video > iframe {
+   position:absolute;
+   top: 5%;
+   left: 5%;
+   width: 90%;
+   height: 90%;  
+ }
+ footer {
+   background-color: var(--cor1);
+   padding:4px
+   
+ }
+ footer > p {
+   padding-top: 10px;
+   text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.041);
+   font-style: italic;
+   font-weight: bold;
+   font-size: 1.3em;
+   font-family: var(--fonte-secundaria);
+   text-align: center;
+ }
+ footer > p::before {
+   content: url('../imagens/forma.png');
+ }
+ footer > p::after {
+   content:url('../imagens/katana.png')
+ }

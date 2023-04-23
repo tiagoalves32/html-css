@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de seletores</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color:black;
+            
+        }
+         h1#principal {
+            background-color: chartreuse;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            font-weight: bold;
+        }
+        .texto {
+            text-align: justify;
+            font-weight: bold;
+        }
+        .subtitulo {
+            background-color: blueviolet;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .css {
+            text-align: right;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: cadetblue;
+        }
+        a {
+            
+            background-color: aqua;
+        }
+
+        .hover {
+            text-align: center;
+            background-color: burlywood;
+            font-style: italic;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        .links {
+            font-weight: bolder;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: 2em;
+            background-color: blue;
+            color: white;
+        }
+        .preferencia {
+            background-color: rgb(187, 46, 192);
+            color: rgb(232, 234, 235);
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        .preferencia:hover {
+            text-decoration: underline;
+        }
+
+        .preferencia::before {
+            content: ' ⇒ ';
+        } 
+        .preferencia::after {
+            content: '⇐' ;
+        }  
+        .preferencia:active {
+            color: chartreuse;
+
+        }
+        .yt {
+            background-color: brown;
+            color: white;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        .yt::before {
+            content: '⇐' ;
+        }
+        .git {
+            background-color: gold;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .git:hover {
+            text-decoration: underline;
+        }
+        .git::before {
+            content: '⇒' ;
+        }
+        .git::after {
+            content: '⇐' ;
+        }
+        div:hover {
+            color:black; 
+            text-decoration: underline;
+        }
+       
+        div > p {
+            display: none;
+        } 
+        div:hover > p {
+            display: block;
+            color:white;
+            background-color: crimson;
+            width: 300px;
+            
+        }
+        
+
+       
+
+    </style>
+</head>
+<body>
+    <h1 id="principal">Aprendendo HTML5</h1> 
+    <h1>HTML avançado</h1>
+    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quos, ad assumenda voluptatem similique ullam obcaecati quibusdam, id fugit blanditiis modi ipsam delectus officiis quaerat porro debitis architecto voluptas eos!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda rerum veritatis dignissimos deserunt blanditiis nesciunt sequi molestias et nobis beatae laborum corporis quod quidem sunt quam, pariatur ipsam, doloribus quisquam.</p>
+    <h2 class="subtitulo">Aprendendo CSS</h2>
+    <h2 class="css">CSS Avançado</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus culpa maiores voluptatem quod, architecto veniam, perspiciatis debitis libero unde aperiam non, dignissimos sint modi omnis. Vero quia dicta doloremque Lorem ipsum dolor sit amet consectetur adipisicing elit. Et optio odit voluptatibus, placeat officiis facilis, vero quae repellat ratione esse, quis ducimus totam? Quidem ex illo, eos a fugit odio.</p>
+    <h2 class="hover">Hover</h2>
+    <div> 
+        Passe o mouse aqui!
+        <p>SURPRESAAAA!</p>
+    </div>
+    <h2 class="links">Links</h2>
+    <ol type="1">
+        <li><a href="https://www.cursoemvideo.com" class="preferencia">Acesse o site do Cursoemvideo</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" class="yt">Acesse o canal do YouTube</a></li>
+        <li><a href="https://gustavoguanabara.github.io" class="git">Acesse o GitHub</a></li>
+
+    </ol>
+    
+</body>
+</html>

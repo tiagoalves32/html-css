@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ico-curso.ico" type="image/x-icon">
+    <title>Formatação de Textos</title>
+    <style>
+        mark{
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <hr>
+    <h2>Negrito / Destaque</h2>
+    <p>Nessa frase temos um <b>termo em negrito </b> usando a tag B(não semântica).</p>
+    <p>Nesta frase,tenho um <strong>termo em destaque</strong> usando a tag STRONG (semântica).</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag i (não semântica). </p>
+    <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM (semântica).</p>
+    <img src="faetec.jpg" alt="logo Faetec">
+    &#x1F604 &copy;
+    <p><em>Uso do itálico</em></p>
+    <p>Não usem mais a tag &lt; u &gt;</p>
+    <p>A tag &lt; b &gt;significa Bold.</p>
+    <p>&#x2764;&trade;</p>
+    <h2>Texto marcaddo</h2>
+    <p>Podemos criar também<mark> um texto marcado</mark>  usando a tag MARK.</p>
+    <p>E no outro parágrafo ,temos ,<mark>outro texto marcado</mark> no final. </p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um<small> texto pequeno</small> nesse parágrafo. </p>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluído </del>para indicar que ele deve ser lido,mas não considerado. </p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar<ins> um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois.</p>
+    <p>Existe também o <u>sublinhado </u>com a tag U (não semântica)</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O.</p>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code>é escrito em linguagem JavaScript.</p>
+    
+    <pre>
+        <code>
+    num = int(input('Digite um número '))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+    print(f'O número {num}é ÍMPAR')
+    print('Fim do programa')
+        </code>
+    </pre>  
+    <h2>Citações simples</h2> 
+     <p>Como diria o pai de um amigo: <q>o computador é um burro mais rápido</q></p>
+     <h2>Citações completas</h2> 
+     <p>Segundo Maurício Samy Silva:</p>
+     <blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=1&dq=html5+e+CSS3&printsec=frontcover">
+        Paulo Silva concluiu o curso de HTML5 e CSS3 há uns meses e,após ter desenvolvido alguns sites para amigos e familiares,resolveu que chegara a hora de criar um siite para divulgar seu trabalho,oferecer seus serviços para o mundo e compartilhar o que aprendeu no curso.
+     </blockquote>
+     <p>Charlie Brown Jr:</p>
+         <blockquote cite="https://www.mensagenscomamor.com/lindas-citacoes">
+        “Mas a verdade é que a distância entre nós me fez tanta falta!”
+        Dentro das relações existem situações boas e ruins que acabam ditando o rumo do relacionamento. Muitas vezes, após o rompimento por causa de algumas situações pequenas, o que fica no peito de ambos é a falta que cada um faz na vida do outro. Lindo mesmo é perceber e aprender com isso. Lindo mesmo é ter a maturidade para conseguir revelar que o outro faz falta em nossas vidas.</blockquote>
+        <h2>Abreviações</h2>
+        <p>Estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.Estou adorando! </p>
+        <h2>Texto invertido</h2>
+        <bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo>.
+
+</body>
+</html>
