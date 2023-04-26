@@ -5,8 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centralização</title>
+    <style>
+        body {
+            background-color: blue;
+        }
+        #conteiner h1 {
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        #conteiner {
+            position: relative;
+            height: 96vh;
+            background-color: blue;
+        }
+        #conteudo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            border: 3px solid black;
+            height: 400px;
+            width: 400px;
+            background-color: yellow;
+        }
+        #dentro {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            border: 2px dashed white;
+            background-color: chartreuse;
+            height:200px;
+            width: 200px;
+        }
+    </style>
 </head>
 <body>
+    <div id="conteiner">
+        <h1>Centralização de Imagens</h1>
+
+    </div>
+    <div id="conteudo">
+
+    </div>
+    <div id="dentro">
+
+    </div>
     
 </body>
 </html>
