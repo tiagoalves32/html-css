@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 800px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            padding: 10px;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            font-weight: bold;
+            padding: 10px;
+        }
+ 
+        #tabela {
+            overflow-x: auto;
+        }
+
+        .colgen {
+            background-color: rgba(126, 221, 32, 0.541);
+        }
+
+        .colfilmes {
+            background-color: rgba(177, 101, 101, 0.432);
+        }
+
+        .colseries {
+            background-color: rgba(133, 78, 185, 0.411);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="tabela">
+        <table>
+            <colgroup>
+            <col class="colgen">
+            <col class="colfilmes">
+            <col class="colseries">
+
+            </colgroup>
+
+            <caption>
+                Os Melhores Filmes e Séries De Todos os Tempos
+            </caption>
+           
+            <thead>
+                <tr>
+                    <th scope="col">Gênero</th>
+                    <th scope="col">Filmes</th>
+                    <th scope="col">Séries</th>
+                </tr>
+            </thead>
+        
+            <tbody>
+                <tr>
+                    <td rowspan="3">Ação</td>
+                    <td >Rambo</td>
+                    <td>Jack Ryan</td>
+                </tr>
+                <tr>
+                    <td>Missão Impossível</td>
+                    <td>The Terminal List</td>
+                </tr>
+                <tr>
+                    <td>Exterminador do Futuro</td>
+                    <td>Reacher</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Drama</td>
+                    <td>A Espera De Um Milagre</td>
+                    <td>Homeland</td>
+                </tr>
+                <tr>
+                    <td>O Náufrago</td>
+                    <td>The Handsmaid's Tale</td>
+                </tr>
+                <tr>
+                    <td>O Padre Stu</td>
+                    <td>Breaking Bad</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Terror</td>
+                    <td>A Casa De Cera</td>
+                    <td>American Horror Story</td>
+                </tr>
+                <tr>
+                    <td>Jogos Mortais</td>
+                    <td>Yellowjackets</td>
+                </tr>
+                <tr>
+                    <td>A Invocação Do Mal (Série Completa)</td>
+                    <td>Stranger Things</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Comédia</td>
+                    <td>Debi e Lóide</td>
+                    <td>Veep</td>
+                </tr>
+                <tr>
+                    <td>As Branquelas</td>
+                    <td>Two And a Half Men</td>
+                </tr>
+                <tr>
+                    <td>Eu,Eu Mesmo e Irene </td>
+                    <td>How I Met Your Mother</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Animação</td>
+                    <td>O Rei Leão</td>
+                    <td>Cyberpunk Edgerunners</td>
+                </tr>
+                <tr>
+                    <td>Mulan</td>
+                    <td>Castlevania</td>
+                </tr>
+                <tr>
+                    <td>Alladin</td>
+                    <td>Naruto</td>
+                </tr>
+        
+        
+        
+        
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
